@@ -11,6 +11,7 @@ pipelines:
       - step:
           script:
             - git remote add github git@github.com:willtome/ansible-windows.git
+            - git remote set-url --add --push github  git@github.com:mgmt-sa-tiger-team/wtome-ansible-network.git
             - git config user.name "Will Tome"
             - git config user.email "wtome@redhat.com"
             - git push -f github master 
